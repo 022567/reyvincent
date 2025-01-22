@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipes - Homepage</title>
+        <style>
+
+        body {
+            background-image: url('images/background.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-position: center center; 
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color white-space: ;: rgb(255, 252, 252) (255, 255, 1);
+            color: :-moz-only-whitespace;
+            padding: 20px 10px;
+            text-align: left;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+        .welcome-message {
+        text-align: center;
+        font-size: 1em;
+        color: #ffffff;  
+        margin-top: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: rgb(241, 238, 238);
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://example.com/hero-image.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .recipes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .recipe-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+        .recipe-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .recipe-card h3 {
+            margin: 15px 10px 10px;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .recipe-card p {
+            margin: 0 10px 15px;
+            color: #666;
+            font-size: 1em;
+        }
+        section {
+            background-color: rgba(255, 252, 252, 0.9);
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .introduction {
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            margin: 20px 0;
+        }
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <div class="welcome-message">
+                <h1>Welcome to Rey's Kitchen!</h1>
+                <h2>
+                    <p class="introduction">"Step into Rey's Kitchen, where every dish tells a story and every meal is made with love. Explore a treasure trove of delicious recipes, helpful cooking techniques, and inspiration to turn your kitchen into a culinary masterpiece."</p>
+                </h2>
+            </div>
+            
+                    
+        </div>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="hero">
+    <h2> Discover the Joy of Cooking </h2>
+    <p>Embark on a flavorful journey with easy-to-follow recipes, expert tips, and inspiration for every occasion. Transform your kitchen into a haven of delicious creations!</p>
+</section>
+
+
+   <!-- Recipe Section -->
+<section id="recipes" class="recipes">
+    <div class="recipe-card" onclick="showRecipe('classic-spaghetti')">
+        <img src="images/spaghetti.jpg" alt="Classic Spaghetti">
+        <h3>Classic Spaghetti</h3>
+        <p>A timeless favorite: al dente spaghetti tossed in a rich and savory tomato sauce with herbs and spices.</p>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('chocolate-chip-cookies')">
+        <img src="images/cookies.jpg" alt="Chocolate Chip Cookies">
+        <h3>Chocolate Chip Cookies</h3>
+        <p>Soft and chewy cookies packed with gooey chocolate chips, perfect for any sweet tooth.</p>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('chicken-stir-fry')">
+        <img src="images/chicken stir fry.jpg" alt="Chicken Stir Fry">
+        <h3>Chicken Stir Fry</h3>
+        <p>A quick and healthy dish featuring tender chicken strips and vibrant vegetables in a flavorful sauce.</p>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('fruit-salad')">
+        <img src="images/fruit salad.jpg" alt="Fruit Salad">
+        <h3>Fruit Salad</h3>
+        <p>A refreshing mix of fresh fruits drizzled with a creamy dressing, perfect for dessert or a light snack.</p>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('simple-pizza')">
+        <img src="images/pizza.jpg" alt="Simple Pizza">
+        <h3>Simple Pizza</h3>
+        <p>An easy homemade pizza topped with your favorite ingredients, baked to perfection for a quick treat.</p>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="recipeModal" class="modal">
+    <div class="modal-content">
+        <button class="close" onclick="closeModal()">&times;</button>
+        <h3 id="recipeTitle"></h3>
+        <ul id="recipeSteps"></ul>
+    </div>
+</div>
+
+<script>
+   // Recipe data
+const recipes = {
+    'spaghetti': {
+        title: 'Spaghetti',
+        steps: [
+            'Boil water in a large pot and cook spaghetti until al dente. Drain and set aside.',
+            'Heat olive oil in a pan, sauté garlic and onions until fragrant.',
+            'Add ground beef and cook until browned.',
+            'Stir in tomato sauce, season with salt, pepper, and Italian herbs.',
+            'Mix the cooked spaghetti with the sauce and serve with grated Parmesan cheese.'
+        ]
+    },
+    'chocolate-chip-cookie': {
+        title: 'Chocolate Chip Cookie',
+        steps: [
+            'Preheat oven to 350°F (175°C).',
+            'In a bowl, cream together butter, sugar, and brown sugar until smooth.',
+            'Beat in eggs and vanilla extract.',
+            'Mix in flour, baking soda, and a pinch of salt until combined.',
+            'Fold in chocolate chips, scoop onto a baking sheet, and bake for 10-12 minutes.'
+        ]
+    },
+    'chicken-stir-fry': {
+        title: 'Chicken Stir Fry',
+        steps: [
+            'Slice chicken breast into thin strips and season with salt and pepper.',
+            'Heat oil in a wok or skillet and stir-fry the chicken until cooked.',
+            'Add chopped vegetables like broccoli, bell peppers, and carrots.',
+            'Stir in soy sauce, oyster sauce, and a splash of sesame oil.',
+            'Cook for 5-7 minutes, toss with sesame seeds, and serve over steamed rice.'
+        ]
+    },
+    'fruit-salad': {
+        title: 'Fruit Salad',
+        steps: [
+            'Wash and chop a mix of fruits such as apples, bananas, oranges, grapes, and mangoes.',
+            'Combine the fruits in a large bowl.',
+            'In a separate bowl, mix yogurt, honey, and a splash of lemon juice.',
+            'Pour the yogurt mixture over the fruits and toss gently to coat.',
+            'Chill in the refrigerator for 30 minutes before serving.'
+        ]
+    },
+    'simple-pizza': {
+        title: 'Simple Pizza',
+        steps: [
+            'Preheat oven to 450°F (230°C).',
+            'Roll out pizza dough on a baking tray or pizza stone.',
+            'Spread a layer of marinara sauce over the dough.',
+            'Top with shredded mozzarella cheese and your choice of toppings (pepperoni, mushrooms, etc.).',
+            'Bake for 12-15 minutes until the crust is golden and cheese is bubbly.'
+        ]
+    }
+};
+
+    // Function to show recipe
+    function showRecipe(recipeKey) {
+        const recipe = recipes[recipeKey];
+        if (recipe) {
+            document.getElementById('recipeTitle').innerText = recipe.title;
+            const stepsList = document.getElementById('recipeSteps');
+            stepsList.innerHTML = '';
+            recipe.steps.forEach(step => {
+                const li = document.createElement('li');
+                li.innerText = step;
+                stepsList.appendChild(li);
+            });
+            document.getElementById('recipeModal').style.display = 'flex';
+        }
+    }
+
+    // Function to close modal
+    function closeModal() {
+        document.getElementById('recipeModal').style.display = 'none';
+    }
+</script>
+
+<!-- CSS -->
+<style>
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+    }
+    .modal-content {
+        background: white;
+        margin: 15% auto;
+        padding: 20px;
+        border-radius: 8px;
+        width: 80%;
+        max-width: 600px;
+        text-align: center;
+    }
+    .close {
+        color: black;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+
+
+<!-- CSS -->
+<style>
+    /* Recipe Cards */
+    #recipes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
+        padding: 16px;
+    }
+    .recipe-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .recipe-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .recipe-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Modal */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 0.3s ease-out;
+    }
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+    .close {
+        background: none;
+        border: none;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+</style>
+    
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+     <!-- Header Section -->
+     
+     <header>
+
+        <div class="welcome-message">
+                <h1>Welcome to Rey's Kitchen!</h1>
+            
+            </div>
+        </div>
+       
+ </header>
+
+ <section id="about">
+    <p class="introduction">"Welcome to Rey's Kitchen! A place where delicious recipes meet creativity, making cooking an enjoyable and fulfilling experience. Discover inspiring ideas, practical tips, and endless possibilities for your next kitchen adventure."</p>
+    <h2>Our Mission</h2>
+    <p>At Rey's Kitchen!, we aim to ignite your culinary passion by offering a diverse array of easy-to-follow recipes and helpful cooking resources. Our mission is to make cooking accessible, enjoyable, and a way to bring families and friends closer together through the love of food.</p>
+    <h2>About the Creator</h2>
+    <p>Hello! I’m Maryanne, the founder and visionary behind this website. As a food enthusiast with a knack for technology, I created this platform to share my love for cooking and empower others to explore their creativity in the kitchen. Combining my web development skills and culinary expertise, I’ve crafted Maryanne's Culinary Haven to inspire, teach, and connect food lovers worldwide. Thank you for being here—let’s create something amazing together!</p>
+</section>
+
+    <footer>
+        <p>Created by Rey Vincent Diaz</p>
+
+        </a>
+        
+    </div>
+</footer>
+     
+    </footer>
+    </section>
+
+    <!-- Contact Us Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/foodlogo.png" alt="Food Recipes Logo" width="200" height="200">
+                </a>
+            </div>
+            <div class="welcome-message">
+                    <h1>Welcome to Rey's Kitchen!</h1>
+                
+                </div>
+            </div>
+           
+    </header>
+    <section id="contact">
+        <p class="introduction">"We’re thrilled to hear from you! Share your feedback, questions, or suggestions, and let us help make your experience exceptional."</p>
+
+        <h2>Contact Methods</h2>
+        <p>Email: diazreyvincent@gmail.com</p>
+        <p>Phone: +639065555453</p>
+      
+        
+            
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3836.7570220389166!2d120.34903977495188!3d15.921795384736544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339145d16fcc8e79%3A0x821208c424536ac3!2sBinalatongan%20Community%20College!5e0!3m2!1sen!2sph!4v1737338830877!5m2!1sen!2sph" 
+            width="800" 
+            height="600" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    
+    
+    </section>
+    <footer>
+        <p>Email: diazreyvincent@gmail.com </p>
+        <p>Phone: +639065555453</p>
+
+        </a>
+       
+        
+    </div>
+</footer>
+     
+    </footer>
+    </section>
+
+    
+</body>
+</html>
